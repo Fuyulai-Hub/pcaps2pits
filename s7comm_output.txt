@@ -1,0 +1,245 @@
+s7comm解析:
+Layer S7COMM
+:	Header: (Job)
+	Protocol Id: 0x32
+	ROSCTR: Job (1)
+	Redundancy Identification (Reserved): 0x0000
+	Protocol Data Unit Reference: 0
+	Parameter length: 8
+	Data length: 0
+	Parameter: (Setup communication)
+	Function: Setup communication (0xf0)
+	Reserved: 0x00
+	Max AmQ (parallel jobs with ack) calling: 1
+	Max AmQ (parallel jobs with ack) called: 1
+	PDU length: 480
+
+Layer S7COMM
+:	Header: (Ack_Data)
+	Protocol Id: 0x32
+	ROSCTR: Ack_Data (3)
+	Redundancy Identification (Reserved): 0x0000
+	Protocol Data Unit Reference: 0
+	Parameter length: 8
+	Data length: 0
+	Error class: No error (0x00)
+	Error code: 0x00
+	Parameter: (Setup communication)
+	Function: Setup communication (0xf0)
+	Reserved: 0x00
+	Max AmQ (parallel jobs with ack) calling: 1
+	Max AmQ (parallel jobs with ack) called: 1
+	PDU length: 240
+
+Layer S7COMM
+:	Header: (Userdata)
+	Protocol Id: 0x32
+	ROSCTR: Userdata (7)
+	Redundancy Identification (Reserved): 0x0000
+	Protocol Data Unit Reference: 0
+	Parameter length: 8
+	Data length: 8
+	Parameter: (Request) ->(CPU functions) ->(Read SZL)
+	Parameter head: 0x000112
+	Parameter length: 4
+	Method (Request/Response): Req (0x11)
+	0100 .... = Type: Request (4)
+	.... 0100 = Function group: CPU functions (4)
+	Subfunction: Read SZL (1)
+	Sequence number: 0
+	Data (SZL-ID: 0x0011, Index: 0x0001)
+	Return code: Success (0xff)
+	Transport size: OCTET STRING (0x09)
+	Length: 4
+	SZL-ID: 0x0011, Diagnostic type: CPU, Number of the partial list extract: All identification data records of a module, Number of the partial list: Module identification
+	0000 .... .... .... = Diagnostic type: CPU (0x0)
+	0000 0000 0001 0001 = Number of the partial list extract: All identification data records of a module (0x0011)
+	.... .... 0001 0001 = Number of the partial list: Module identification (0x11)
+	SZL-Index: 0x0001
+
+Layer S7COMM
+:	Header: (Userdata)
+	Protocol Id: 0x32
+	ROSCTR: Userdata (7)
+	Redundancy Identification (Reserved): 0x0000
+	Protocol Data Unit Reference: 0
+	Parameter length: 12
+	Data length: 124
+	Parameter: (Response) ->(CPU functions) ->(Read SZL)
+	Parameter head: 0x000112
+	Parameter length: 8
+	Method (Request/Response): Res (0x12)
+	1000 .... = Type: Response (8)
+	.... 0100 = Function group: CPU functions (4)
+	Subfunction: Read SZL (1)
+	Sequence number: 10
+	Data unit reference number: 0
+	Last data unit: Yes (0x00)
+	Error code: No error (0x0000)
+	Data (SZL-ID: 0x0011, Index: 0x0000)
+	Return code: Success (0xff)
+	Transport size: OCTET STRING (0x09)
+	Length: 120
+	SZL-ID: 0x0011, Diagnostic type: CPU, Number of the partial list extract: All identification data records of a module, Number of the partial list: Module identification
+	0000 .... .... .... = Diagnostic type: CPU (0x0)
+	0000 0000 0001 0001 = Number of the partial list extract: All identification data records of a module (0x0011)
+	.... .... 0001 0001 = Number of the partial list: Module identification (0x11)
+	SZL-Index: 0x0000
+	SZL partial list length in bytes: 28
+	SZL partial list count: 4
+	SZL data tree (list count no. 1)
+	Index: 0x0001
+	MlfB (Order number of the module): 6ES7 317-2AJ10-0AB0 
+	BGTyp (Module type ID): 0x00c0
+	Ausbg (Version of the module or release of the operating system): 5
+	Ausbe (Release of the PG description file): 1
+	SZL data tree (list count no. 2)
+	SZL data tree (list count no. 3)
+	SZL data tree (list count no. 4)
+	Index: 0x0006
+	Index: 0x0007
+	Index: 0x0081
+	MlfB (Order number of the module): 6ES7 317-2AJ10-0AB0 
+	MlfB (Order number of the module):                     
+	MlfB (Order number of the module): Boot Loader         
+	BGTyp (Module type ID): 0x00c0
+	BGTyp (Module type ID): 0x00c0
+	BGTyp (Module type ID): 0x0000
+	Ausbg (Version of the module or release of the operating system): 5
+	Ausbg (Version of the module or release of the operating system): 22018
+	Ausbg (Version of the module or release of the operating system): 16650
+	Ausbe (Release of the PG description file): 1
+	Ausbe (Release of the PG description file): 1541
+	Ausbe (Release of the PG description file): 3337
+
+Layer S7COMM
+:	Header: (Userdata)
+	Protocol Id: 0x32
+	ROSCTR: Userdata (7)
+	Redundancy Identification (Reserved): 0x0000
+	Protocol Data Unit Reference: 0
+	Parameter length: 8
+	Data length: 8
+	Parameter: (Request) ->(CPU functions) ->(Read SZL)
+	Parameter head: 0x000112
+	Parameter length: 4
+	Method (Request/Response): Req (0x11)
+	0100 .... = Type: Request (4)
+	.... 0100 = Function group: CPU functions (4)
+	Subfunction: Read SZL (1)
+	Sequence number: 0
+	Data (SZL-ID: 0x0011, Index: 0x0001)
+	Return code: Success (0xff)
+	Transport size: OCTET STRING (0x09)
+	Length: 4
+	SZL-ID: 0x0011, Diagnostic type: CPU, Number of the partial list extract: All identification data records of a module, Number of the partial list: Module identification
+	0000 .... .... .... = Diagnostic type: CPU (0x0)
+	0000 0000 0001 0001 = Number of the partial list extract: All identification data records of a module (0x0011)
+	.... .... 0001 0001 = Number of the partial list: Module identification (0x11)
+	SZL-Index: 0x0001
+
+Layer S7COMM
+:	Header: (Userdata)
+	Protocol Id: 0x32
+	ROSCTR: Userdata (7)
+	Redundancy Identification (Reserved): 0x0000
+	Protocol Data Unit Reference: 0
+	Parameter length: 12
+	Data length: 124
+	Parameter: (Response) ->(CPU functions) ->(Read SZL)
+	Parameter head: 0x000112
+	Parameter length: 8
+	Method (Request/Response): Res (0x12)
+	1000 .... = Type: Response (8)
+	.... 0100 = Function group: CPU functions (4)
+	Subfunction: Read SZL (1)
+	Sequence number: 6
+	Data unit reference number: 0
+	Last data unit: Yes (0x00)
+	Error code: No error (0x0000)
+	Data (SZL-ID: 0x0011, Index: 0x0000)
+	Return code: Success (0xff)
+	Transport size: OCTET STRING (0x09)
+	Length: 120
+	SZL-ID: 0x0011, Diagnostic type: CPU, Number of the partial list extract: All identification data records of a module, Number of the partial list: Module identification
+	0000 .... .... .... = Diagnostic type: CPU (0x0)
+	0000 0000 0001 0001 = Number of the partial list extract: All identification data records of a module (0x0011)
+	.... .... 0001 0001 = Number of the partial list: Module identification (0x11)
+	SZL-Index: 0x0000
+	SZL partial list length in bytes: 28
+	SZL partial list count: 4
+	SZL data tree (list count no. 1)
+	Index: 0x0001
+	MlfB (Order number of the module): 6ES7 317-2AJ10-0AB0 
+	BGTyp (Module type ID): 0x00c0
+	Ausbg (Version of the module or release of the operating system): 5
+	Ausbe (Release of the PG description file): 1
+	SZL data tree (list count no. 2)
+	SZL data tree (list count no. 3)
+	SZL data tree (list count no. 4)
+	Index: 0x0006
+	Index: 0x0007
+	Index: 0x0081
+	MlfB (Order number of the module): 6ES7 317-2AJ10-0AB0 
+	MlfB (Order number of the module):                     
+	MlfB (Order number of the module): Boot Loader         
+	BGTyp (Module type ID): 0x00c0
+	BGTyp (Module type ID): 0x00c0
+	BGTyp (Module type ID): 0x0000
+	Ausbg (Version of the module or release of the operating system): 5
+	Ausbg (Version of the module or release of the operating system): 22018
+	Ausbg (Version of the module or release of the operating system): 16650
+	Ausbe (Release of the PG description file): 1
+	Ausbe (Release of the PG description file): 1541
+	Ausbe (Release of the PG description file): 3337
+
+Layer S7COMM
+:	Header: (Userdata)
+	Protocol Id: 0x32
+	ROSCTR: Userdata (7)
+	Redundancy Identification (Reserved): 0x0000
+	Protocol Data Unit Reference: 0
+	Parameter length: 8
+	Data length: 8
+	Parameter: (Request) ->(CPU functions) ->(Read SZL)
+	Parameter head: 0x000112
+	Parameter length: 4
+	Method (Request/Response): Req (0x11)
+	0100 .... = Type: Request (4)
+	.... 0100 = Function group: CPU functions (4)
+	Subfunction: Read SZL (1)
+	Sequence number: 0
+	Data (SZL-ID: 0x001c, Index: 0x0001)
+	Return code: Success (0xff)
+	Transport size: OCTET STRING (0x09)
+	Length: 4
+	SZL-ID: 0x001c, Diagnostic type: CPU, Number of the partial list extract: Identification of all components, Number of the partial list: Component Identification
+	0000 .... .... .... = Diagnostic type: CPU (0x0)
+	0000 0000 0001 1100 = Number of the partial list extract: Identification of all components (0x001c)
+	.... .... 0001 1100 = Number of the partial list: Component Identification (0x1c)
+	SZL-Index: 0x0001
+
+Layer S7COMM
+:	Header: (Userdata)
+	Protocol Id: 0x32
+	ROSCTR: Userdata (7)
+	Redundancy Identification (Reserved): 0x0000
+	Protocol Data Unit Reference: 0
+	Parameter length: 12
+	Data length: 218
+	Parameter: (Response) ->(CPU functions) ->(Read SZL)
+	Parameter head: 0x000112
+	Parameter length: 8
+	Method (Request/Response): Res (0x12)
+	1000 .... = Type: Response (8)
+	.... 0100 = Function group: CPU functions (4)
+	Subfunction: Read SZL (1)
+	Sequence number: 7
+	Data unit reference number: 7
+	Last data unit: No (0x01)
+	Error code: No error (0x0000)
+	Data (S7COMM fragment id=7)
+	Return code: Success (0xff)
+	Transport size: OCTET STRING (0x09)
+	Length: 214
+

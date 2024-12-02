@@ -1,0 +1,195 @@
+<?xml version="1.0" ?>
+<Peach xmlns="http://peachfuzzer.com/Peach" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://peachfuzzer.com/Peach ../peach.xsd">
+	<DataModel name="S7CommDataModel">
+		<Field name=":	Header" type="string" value="(Job)"/>
+		<Field name="Protocol Id" type="string" value="0x32"/>
+		<Field name="ROSCTR" type="string" value="Job (1)"/>
+		<Field name="Redundancy Identification (Reserved)" type="string" value="0x0000"/>
+		<Field name="Protocol Data Unit Reference" type="string" value="0"/>
+		<Field name="Parameter length" type="string" value="8"/>
+		<Field name="Data length" type="string" value="0"/>
+		<Field name="Parameter" type="string" value="(Setup communication)"/>
+		<Field name="Function" type="string" value="Setup communication (0xf0)"/>
+		<Field name="Reserved" type="string" value="0x00"/>
+		<Field name="Max AmQ (parallel jobs with ack) calling" type="string" value="1"/>
+		<Field name="Max AmQ (parallel jobs with ack) called" type="string" value="1"/>
+		<Field name="PDU length" type="string" value="480"/>
+		<Field name=":	Header" type="string" value="(Ack_Data)"/>
+		<Field name="Protocol Id" type="string" value="0x32"/>
+		<Field name="ROSCTR" type="string" value="Ack_Data (3)"/>
+		<Field name="Redundancy Identification (Reserved)" type="string" value="0x0000"/>
+		<Field name="Protocol Data Unit Reference" type="string" value="0"/>
+		<Field name="Parameter length" type="string" value="8"/>
+		<Field name="Data length" type="string" value="0"/>
+		<Field name="Error class" type="string" value="No error (0x00)"/>
+		<Field name="Error code" type="string" value="0x00"/>
+		<Field name="Parameter" type="string" value="(Setup communication)"/>
+		<Field name="Function" type="string" value="Setup communication (0xf0)"/>
+		<Field name="Reserved" type="string" value="0x00"/>
+		<Field name="Max AmQ (parallel jobs with ack) calling" type="string" value="1"/>
+		<Field name="Max AmQ (parallel jobs with ack) called" type="string" value="1"/>
+		<Field name="PDU length" type="string" value="240"/>
+		<Field name=":	Header" type="string" value="(Userdata)"/>
+		<Field name="Protocol Id" type="string" value="0x32"/>
+		<Field name="ROSCTR" type="string" value="Userdata (7)"/>
+		<Field name="Redundancy Identification (Reserved)" type="string" value="0x0000"/>
+		<Field name="Protocol Data Unit Reference" type="string" value="0"/>
+		<Field name="Parameter length" type="string" value="4"/>
+		<Field name="Data length" type="string" value="8"/>
+		<Field name="Parameter" type="string" value="(Request) -&gt;(CPU functions) -&gt;(Read SZL)"/>
+		<Field name="Parameter head" type="string" value="0x000112"/>
+		<Field name="Method (Request/Response)" type="string" value="Req (0x11)"/>
+		<Field name="0100 .... = Type" type="string" value="Request (4)"/>
+		<Field name=".... 0100 = Function group" type="string" value="CPU functions (4)"/>
+		<Field name="Subfunction" type="string" value="Read SZL (1)"/>
+		<Field name="Sequence number" type="string" value="0"/>
+		<Field name="Return code" type="string" value="Success (0xff)"/>
+		<Field name="Transport size" type="string" value="OCTET STRING (0x09)"/>
+		<Field name="Length" type="string" value="4"/>
+		<Field name="0000 .... .... .... = Diagnostic type" type="string" value="CPU (0x0)"/>
+		<Field name="0000 0000 0001 0001 = Number of the partial list extract" type="string" value="All identification data records of a module (0x0011)"/>
+		<Field name=".... .... 0001 0001 = Number of the partial list" type="string" value="Module identification (0x11)"/>
+		<Field name="SZL-Index" type="string" value="0x0001"/>
+		<Field name=":	Header" type="string" value="(Userdata)"/>
+		<Field name="Protocol Id" type="string" value="0x32"/>
+		<Field name="ROSCTR" type="string" value="Userdata (7)"/>
+		<Field name="Redundancy Identification (Reserved)" type="string" value="0x0000"/>
+		<Field name="Protocol Data Unit Reference" type="string" value="0"/>
+		<Field name="Parameter length" type="string" value="8"/>
+		<Field name="Data length" type="string" value="124"/>
+		<Field name="Parameter" type="string" value="(Response) -&gt;(CPU functions) -&gt;(Read SZL)"/>
+		<Field name="Parameter head" type="string" value="0x000112"/>
+		<Field name="Method (Request/Response)" type="string" value="Res (0x12)"/>
+		<Field name="1000 .... = Type" type="string" value="Response (8)"/>
+		<Field name=".... 0100 = Function group" type="string" value="CPU functions (4)"/>
+		<Field name="Subfunction" type="string" value="Read SZL (1)"/>
+		<Field name="Sequence number" type="string" value="10"/>
+		<Field name="Data unit reference number" type="string" value="0"/>
+		<Field name="Last data unit" type="string" value="Yes (0x00)"/>
+		<Field name="Error code" type="string" value="No error (0x0000)"/>
+		<Field name="Return code" type="string" value="Success (0xff)"/>
+		<Field name="Transport size" type="string" value="OCTET STRING (0x09)"/>
+		<Field name="Length" type="string" value="120"/>
+		<Field name="0000 .... .... .... = Diagnostic type" type="string" value="CPU (0x0)"/>
+		<Field name="0000 0000 0001 0001 = Number of the partial list extract" type="string" value="All identification data records of a module (0x0011)"/>
+		<Field name=".... .... 0001 0001 = Number of the partial list" type="string" value="Module identification (0x11)"/>
+		<Field name="SZL-Index" type="string" value="0x0000"/>
+		<Field name="SZL partial list length in bytes" type="string" value="28"/>
+		<Field name="SZL partial list count" type="string" value="4"/>
+		<Field name="Index" type="string" value="0x0081"/>
+		<Field name="MlfB (Order number of the module)" type="string" value="Boot Loader"/>
+		<Field name="BGTyp (Module type ID)" type="string" value="0x0000"/>
+		<Field name="Ausbg (Version of the module or release of the operating system)" type="string" value="16650"/>
+		<Field name="Ausbe (Release of the PG description file)" type="string" value="3337"/>
+		<Field name=":	Header" type="string" value="(Userdata)"/>
+		<Field name="Protocol Id" type="string" value="0x32"/>
+		<Field name="ROSCTR" type="string" value="Userdata (7)"/>
+		<Field name="Redundancy Identification (Reserved)" type="string" value="0x0000"/>
+		<Field name="Protocol Data Unit Reference" type="string" value="0"/>
+		<Field name="Parameter length" type="string" value="4"/>
+		<Field name="Data length" type="string" value="8"/>
+		<Field name="Parameter" type="string" value="(Request) -&gt;(CPU functions) -&gt;(Read SZL)"/>
+		<Field name="Parameter head" type="string" value="0x000112"/>
+		<Field name="Method (Request/Response)" type="string" value="Req (0x11)"/>
+		<Field name="0100 .... = Type" type="string" value="Request (4)"/>
+		<Field name=".... 0100 = Function group" type="string" value="CPU functions (4)"/>
+		<Field name="Subfunction" type="string" value="Read SZL (1)"/>
+		<Field name="Sequence number" type="string" value="0"/>
+		<Field name="Return code" type="string" value="Success (0xff)"/>
+		<Field name="Transport size" type="string" value="OCTET STRING (0x09)"/>
+		<Field name="Length" type="string" value="4"/>
+		<Field name="0000 .... .... .... = Diagnostic type" type="string" value="CPU (0x0)"/>
+		<Field name="0000 0000 0001 0001 = Number of the partial list extract" type="string" value="All identification data records of a module (0x0011)"/>
+		<Field name=".... .... 0001 0001 = Number of the partial list" type="string" value="Module identification (0x11)"/>
+		<Field name="SZL-Index" type="string" value="0x0001"/>
+		<Field name=":	Header" type="string" value="(Userdata)"/>
+		<Field name="Protocol Id" type="string" value="0x32"/>
+		<Field name="ROSCTR" type="string" value="Userdata (7)"/>
+		<Field name="Redundancy Identification (Reserved)" type="string" value="0x0000"/>
+		<Field name="Protocol Data Unit Reference" type="string" value="0"/>
+		<Field name="Parameter length" type="string" value="8"/>
+		<Field name="Data length" type="string" value="124"/>
+		<Field name="Parameter" type="string" value="(Response) -&gt;(CPU functions) -&gt;(Read SZL)"/>
+		<Field name="Parameter head" type="string" value="0x000112"/>
+		<Field name="Method (Request/Response)" type="string" value="Res (0x12)"/>
+		<Field name="1000 .... = Type" type="string" value="Response (8)"/>
+		<Field name=".... 0100 = Function group" type="string" value="CPU functions (4)"/>
+		<Field name="Subfunction" type="string" value="Read SZL (1)"/>
+		<Field name="Sequence number" type="string" value="6"/>
+		<Field name="Data unit reference number" type="string" value="0"/>
+		<Field name="Last data unit" type="string" value="Yes (0x00)"/>
+		<Field name="Error code" type="string" value="No error (0x0000)"/>
+		<Field name="Return code" type="string" value="Success (0xff)"/>
+		<Field name="Transport size" type="string" value="OCTET STRING (0x09)"/>
+		<Field name="Length" type="string" value="120"/>
+		<Field name="0000 .... .... .... = Diagnostic type" type="string" value="CPU (0x0)"/>
+		<Field name="0000 0000 0001 0001 = Number of the partial list extract" type="string" value="All identification data records of a module (0x0011)"/>
+		<Field name=".... .... 0001 0001 = Number of the partial list" type="string" value="Module identification (0x11)"/>
+		<Field name="SZL-Index" type="string" value="0x0000"/>
+		<Field name="SZL partial list length in bytes" type="string" value="28"/>
+		<Field name="SZL partial list count" type="string" value="4"/>
+		<Field name="Index" type="string" value="0x0081"/>
+		<Field name="MlfB (Order number of the module)" type="string" value="Boot Loader"/>
+		<Field name="BGTyp (Module type ID)" type="string" value="0x0000"/>
+		<Field name="Ausbg (Version of the module or release of the operating system)" type="string" value="16650"/>
+		<Field name="Ausbe (Release of the PG description file)" type="string" value="3337"/>
+		<Field name=":	Header" type="string" value="(Userdata)"/>
+		<Field name="Protocol Id" type="string" value="0x32"/>
+		<Field name="ROSCTR" type="string" value="Userdata (7)"/>
+		<Field name="Redundancy Identification (Reserved)" type="string" value="0x0000"/>
+		<Field name="Protocol Data Unit Reference" type="string" value="0"/>
+		<Field name="Parameter length" type="string" value="4"/>
+		<Field name="Data length" type="string" value="8"/>
+		<Field name="Parameter" type="string" value="(Request) -&gt;(CPU functions) -&gt;(Read SZL)"/>
+		<Field name="Parameter head" type="string" value="0x000112"/>
+		<Field name="Method (Request/Response)" type="string" value="Req (0x11)"/>
+		<Field name="0100 .... = Type" type="string" value="Request (4)"/>
+		<Field name=".... 0100 = Function group" type="string" value="CPU functions (4)"/>
+		<Field name="Subfunction" type="string" value="Read SZL (1)"/>
+		<Field name="Sequence number" type="string" value="0"/>
+		<Field name="Return code" type="string" value="Success (0xff)"/>
+		<Field name="Transport size" type="string" value="OCTET STRING (0x09)"/>
+		<Field name="Length" type="string" value="4"/>
+		<Field name="0000 .... .... .... = Diagnostic type" type="string" value="CPU (0x0)"/>
+		<Field name="0000 0000 0001 1100 = Number of the partial list extract" type="string" value="Identification of all components (0x001c)"/>
+		<Field name=".... .... 0001 1100 = Number of the partial list" type="string" value="Component Identification (0x1c)"/>
+		<Field name="SZL-Index" type="string" value="0x0001"/>
+		<Field name=":	Header" type="string" value="(Userdata)"/>
+		<Field name="Protocol Id" type="string" value="0x32"/>
+		<Field name="ROSCTR" type="string" value="Userdata (7)"/>
+		<Field name="Redundancy Identification (Reserved)" type="string" value="0x0000"/>
+		<Field name="Protocol Data Unit Reference" type="string" value="0"/>
+		<Field name="Parameter length" type="string" value="8"/>
+		<Field name="Data length" type="string" value="218"/>
+		<Field name="Parameter" type="string" value="(Response) -&gt;(CPU functions) -&gt;(Read SZL)"/>
+		<Field name="Parameter head" type="string" value="0x000112"/>
+		<Field name="Method (Request/Response)" type="string" value="Res (0x12)"/>
+		<Field name="1000 .... = Type" type="string" value="Response (8)"/>
+		<Field name=".... 0100 = Function group" type="string" value="CPU functions (4)"/>
+		<Field name="Subfunction" type="string" value="Read SZL (1)"/>
+		<Field name="Sequence number" type="string" value="7"/>
+		<Field name="Data unit reference number" type="string" value="7"/>
+		<Field name="Last data unit" type="string" value="No (0x01)"/>
+		<Field name="Error code" type="string" value="No error (0x0000)"/>
+		<Field name="Return code" type="string" value="Success (0xff)"/>
+		<Field name="Transport size" type="string" value="OCTET STRING (0x09)"/>
+		<Field name="Length" type="string" value="214"/>
+	</DataModel>
+	<StateModel name="S7CommStateModel" initialState="Initial">
+		<State name="Initial">
+			<Action type="connect"/>
+			<Action type="updateSession">
+				<Payload>
+					<S7CommDataModel/>
+				</Payload>
+			</Action>
+			<Action type="close"/>
+		</State>
+	</StateModel>
+	<Test name="S7CommTest">
+		<StateModel ref="S7CommStateModel"/>
+		<Publisher class="File">
+			<Parameter name="FileName" value="s7comm_output.txt"/>
+		</Publisher>
+	</Test>
+</Peach>
